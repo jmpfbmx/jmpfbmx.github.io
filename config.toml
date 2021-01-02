@@ -43,7 +43,7 @@ metaDataFormat = "toml"
       [[languages.en.menu.main]]
         identifier = "telegram"
         name = "Contact"
-        url = "https://t.me/jmpfbmx"
+        url = "https://t.me/jmpf_bmx"
       [[languages.en.menu.main]]
         identifier = "github"
         name = "GitHub"
