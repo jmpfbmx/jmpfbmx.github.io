@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>jmpfbmx</title>
+    <link>https://jmpfbmx.github.io/</link>
+    <description>Recent content on jmpfbmx</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>©2021 - jmpfbmx</copyright>
+    <lastBuildDate>Fri, 01 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://jmpfbmx.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About Me</title>
+      <link>https://jmpfbmx.github.io/about/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://jmpfbmx.github.io/about/</guid>
+      <description>Hello. Welcome to my about page
+I’m Jose, actually an ITC Grade student, I’m from Spain. Really interested on Android development and making kernels.
+In my free time I spend hours on the computer learning new programming languages, building ROMs or making kernel for my devices. (Thanks to those brands that doesn&amp;rsquo;t provide kernel source)
+If you need something of me feel free to contact with me, will answer when I can.</description>
+    </item>
+    
+    <item>
+      <title>How to build a kernel using GCC?</title>
+      <link>https://jmpfbmx.github.io/posts/how-to-build-a-kernel-using-gcc/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://jmpfbmx.github.io/posts/how-to-build-a-kernel-using-gcc/</guid>
+      <description>Hi,
+Today will explain you how to build a kernel using GCC toolchain.
+What will you need for Android Building?
+ A computer with:  At least 4GB of RAM. 10GB free as maximum Being familiar with Linux.    1st.- We need to clone our kernel source or download it from the brand opensource webpage.
+2nd.- We need to know the arch of our kernel source before start cloning the toolchain.</description>
+    </item>
+    
+    <item>
+      <title>How to prepare your PC for Android Building?</title>
+      <link>https://jmpfbmx.github.io/posts/how-to-prepare-your-enviroment/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://jmpfbmx.github.io/posts/how-to-prepare-your-enviroment/</guid>
+      <description>Hi,
+Today will explain you how to prepare your PC for Android building.
+What will you need for Android Building?
+ A computer with:  At least 8GB of RAM, the recommend amount of RAM is 16GB 300GB free A decent internet connection and reliable electricity Being familiar with Linux.    1st.- We need to install ADB and Fastboot.
+How to install ADB and Fastboot at ___ ?:</description>
+    </item>
+    
+  </channel>
+</rss>
