@@ -76,11 +76,6 @@ body {
     background:#1f222a;
 }
 
-experience {
-    min-height:100vh;
-    overflow:hidden;
-}
-
 home {
     min-height:100vh;
     overflow:hidden;
@@ -126,6 +121,103 @@ skillcard > img {
 skillcard:hover {
     color: #ffffff;
     background: #2D2D2D;
+}
+
+experience {
+    min-height:100vh;
+    overflow:hidden;
+}
+
+experiencetimeline {
+    margin-top: 40px;
+}
+
+ul.timeline-list {
+    position: relative;
+    margin: 0;
+    padding: 0
+}
+
+ul.timeline-list:before {
+    position: absolute;
+    content: "";
+    width: 2px;
+    height: 100%;
+    background-color: #78e2a0;
+    left: 50%;
+    top: 0;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+ul.timeline-list li {
+    position: relative;
+    clear: both;
+    display: table;
+}
+
+ul.timeline-list li:before {
+    position: absolute;
+    content: "";
+    width: 25px;
+    height: 25px;
+    background-color: #78e2a0;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+}
+
+work {
+    background-color:#1f222a;
+}
+
+ul.timeline-list li work {
+    width: 45%;
+    color: #ffffff;
+    padding: 30px;
+    float: left;
+}
+
+ul.timeline-list li:nth-child(2n) work {
+    float: right;
+}
+
+work span {
+    font-weight: 500;
+    color: #78e2a0;
+}
+
+work h5 {
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+work p {
+    text-align: justify;
+}
+
+tags {
+    width: 74px;
+    height: 27px;
+    background: #2E2E2E;
+    justify-content: center;
+    text-align: center;
+    display: inline-block;
+    border-radius: 30px;
+}
+
+tags > span {
+    color: #9CA3AF !important;
+}
+
+tags:hover {
+    background: #2D2D2D;
+}
+
+tags:hover > span {
+    color: #ffffff !important;
 }
 
 projects {
