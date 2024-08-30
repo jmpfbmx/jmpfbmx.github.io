@@ -72,11 +72,6 @@
     --bs-body-font-family:'JetBrains Mono',monospace;
 }
 
-blogs {
-    min-height:100vh;
-    overflow:hidden;
-}
-
 body {
     background:#1f222a;
 }
@@ -164,5 +159,42 @@ projectcard > div {
 }
 
 projectcard > div > a::after {
+    content: ' ->';
+}
+
+blogs {
+    min-height:100vh;
+    overflow:hidden
+}
+
+blogcard {
+    background: #363636 !important;
+    width: 1345px !important;
+    height: 295px !important;
+    border-radius: 10px !important;
+    margin-top: 24px !important;
+    margin-left: 45px !important;
+    padding: 30px 40px !important;
+}
+
+blogcard > div > div > img {
+    width: 465px !important;
+    height: 230px !important;
+    border-radius: 14px !important;
+}
+
+blogcard > div > div > div > p {
+    text-align: justify !important;
+}
+
+blogcard > div > div > div > a {
+    text-decoration: none !important;
+}
+
+blogcard > div > div > div > a:hover {
+    color: #78e2a0 !important;
+}
+
+blogcard > div > div > a::after {
     content: ' ->';
 }
