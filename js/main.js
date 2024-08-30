@@ -37,6 +37,13 @@ function updateAria() {
     });
 }
 
+let home = () => document.getElementById('home').scrollIntoView({behavior: 'smooth'});
+let skills = () => document.getElementById('skills').scrollIntoView({behavior: 'smooth'});
+let experience = () => document.getElementById('experience').scrollIntoView({behavior: 'smooth'});
+let projects = () => document.getElementById('projects').scrollIntoView({behavior: 'smooth'});
+let blogs = () => document.getElementById('blogs').scrollIntoView({behavior: 'smooth'});
+let contact = () => document.getElementById('contact').scrollIntoView({behavior: 'smooth'});
+
 window.addEventListener('scroll', updateHashOnScroll);
 window.addEventListener('hashchange', updateAria);
 
