@@ -1,0 +1,68 @@
+.footer-main {
+    background:#363636;
+}
+
+.copyright-link {
+    color:#ffffff;
+}
+
+.copyright-link:hover {
+    color:#78e2a0;
+}
+
+.navbar-sections::before {
+    color:#78e2a0;
+    content:'$ ';
+}
+
+.nav-link:hover {
+    --bs-navbar-hover-color:#fff;
+}
+
+.custom-margin {
+    margin-left:13.125rem!important;
+    margin-right:13.125rem!important;
+}
+
+.webheader {
+    background:#78e2a0;
+    padding:5px;
+}
+
+:root {
+    --bs-body-font-family:'JetBrains Mono',monospace;
+}
+
+blogs {
+    min-height:100vh;
+    overflow:hidden;
+}
+
+body {
+    background:#1f222a;
+}
+
+contacts {
+    min-height:100vh;
+    overflow:hidden
+}
+
+experience {
+    min-height:100vh;
+    overflow:hidden;
+}
+
+home {
+    min-height:100vh;
+    overflow:hidden;
+}
+
+projects {
+    min-height:100vh;
+    overflow:hidden;
+}
+
+skills {
+    min-height:100vh;
+    overflow:hidden;
+}
