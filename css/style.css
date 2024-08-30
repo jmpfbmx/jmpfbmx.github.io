@@ -24,6 +24,45 @@
     margin-right:13.125rem!important;
 }
 
+.container {
+    margin: 0;
+    max-width: 100vw;
+}
+
+.description-txt {
+    color: #9CA3AF;
+    font-size: .875rem;
+}
+
+.custom-btn {
+    --bs-btn-bg: #78e2a0;
+    --bs-btn-color: #000000;
+    --bs-btn-border-color: #78e2a0;
+    --bs-btn-hover-bg: #5cc787;
+    --bs-btn-hover-color: #000000;
+    --bs-btn-hover-border-color: #5cc787;
+}
+
+.custom-txt {
+    color: #78e2a0;
+}
+
+.social-media {
+    color: #9CA3AF;
+    font-size: 28px;
+    padding: 0 0.438rem;
+}
+
+.social-media:hover {
+    color: #ffffff;
+}
+
+.pfp {
+    border-radius: 50%;
+    height: 25.875rem;
+    width: 25.875rem;
+}
+
 .webheader {
     background:#78e2a0;
     padding:5px;
@@ -55,6 +94,15 @@ experience {
 home {
     min-height:100vh;
     overflow:hidden;
+}
+
+home > div > .row > .col-sm-12 {
+    flex: 3 1;
+    padding-right: 200px;
+}
+
+home > div > .row > .col {
+    flex: 1 2;
 }
 
 projects {
