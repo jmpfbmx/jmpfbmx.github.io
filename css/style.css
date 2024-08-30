@@ -114,3 +114,31 @@ skills {
     min-height:100vh;
     overflow:hidden;
 }
+
+skillcard {
+    width: 250px;
+    height: 90px;
+    border-radius: 8px;
+    background: #2E2E2E;
+    padding: 15px;
+    position: relative;
+    color: #9CA3AF;
+    margin-top: 21px;
+    margin-left: 21px;
+}
+
+skillcard > p {
+    font-size: .875rem;
+}
+
+skillcard > img {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    fill: #9CA3AF;
+}
+
+skillcard:hover {
+    color: #ffffff;
+    background: #2D2D2D;
+}
