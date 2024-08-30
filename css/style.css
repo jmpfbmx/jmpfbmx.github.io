@@ -76,11 +76,6 @@ body {
     background:#1f222a;
 }
 
-contacts {
-    min-height:100vh;
-    overflow:hidden
-}
-
 experience {
     min-height:100vh;
     overflow:hidden;
@@ -197,4 +192,9 @@ blogcard > div > div > div > a:hover {
 
 blogcard > div > div > a::after {
     content: ' ->';
+}
+
+contacts {
+    min-height:100vh;
+    overflow:hidden
 }
