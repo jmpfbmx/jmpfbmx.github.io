@@ -90,6 +90,11 @@ home > div > .row > .col {
     flex: 1 2;
 }
 
+home div a i {
+    line-height: 50px !important;
+    font-size: 30px !important;
+}
+
 skills {
     min-height:100vh;
     overflow:hidden;
