@@ -1,297 +1,382 @@
+/* Adds an initial blur effect and reduces opacity while the page is loading */
+body.loading {
+    filter: blur(10px); /* Blurs the entire page */
+    opacity: 0.7; /* Reduces opacity for a fading effect */
+    overflow: hidden; /* Prevents scrolling while loading */
+}
+
+/* Dark background for the navigation bar when scrolled */
+.navbar.dark-nav {
+    background-color: #1f222a; /* Dark gray background for the navbar */
+}
+
+/* Background color for the footer */
 .footer-main {
-    background:#363636;
+    background: #363636; /* Medium dark gray background */
 }
 
-.copyright-link {
-    color:#ffffff;
-}
-
+/* Hover effect for copyright links */
 .copyright-link:hover {
-    color:#78e2a0;
+    color: #78e2a0 !important; /* Light green color on hover */
 }
 
+.text-justify {
+    text-align: justify;
+}
+
+/* Prefixes navbar section links with a symbol */
 .navbar-sections::before {
-    color:#78e2a0;
-    content:'$ ';
+    color: #78e2a0; /* Light green color for the prefix */
+    content: '$ '; /* Prefix content for navbar links */
 }
 
+/* Default color for navbar section links */
+.navbar-sections {
+    color: #9CA3AF; /* Gray color for inactive navbar links */
+}
+
+/* Active state for navbar section links */
+.navbar-sections.active {
+    color: #ffffff !important; /* White color for active navbar links */
+}
+
+/* Hover effect for all navigation links */
 .nav-link:hover {
-    --bs-navbar-hover-color:#fff;
+    --bs-navbar-hover-color: #fff; /* White color on hover */
 }
 
-.custom-margin {
-    margin-left:13.125rem!important;
-    margin-right:13.125rem!important;
-}
-
-.container {
-    margin: 0;
-    max-width: 100vw;
-}
-
+/* Styling for descriptive text */
 .description-txt {
-    color: #9CA3AF;
-    font-size: .875rem;
+    color: #9CA3AF; /* Light gray text color */
+    font-size: 0.875rem; /* Slightly smaller font size */
+    letter-spacing: -0.6px; /* Slight negative spacing for a tighter look */
+    padding: 5px;
 }
 
+/* Custom button styles */
 .custom-btn {
-    --bs-btn-bg: #78e2a0;
-    --bs-btn-color: #000000;
-    --bs-btn-border-color: #78e2a0;
-    --bs-btn-hover-bg: #5cc787;
-    --bs-btn-hover-color: #000000;
-    --bs-btn-hover-border-color: #5cc787;
+    --bs-btn-bg: #78e2a0; /* Light green background color */
+    --bs-btn-color: #000000; /* Black text color */
+    --bs-btn-border-color: #78e2a0; /* Light green border color */
+    --bs-btn-hover-bg: #5cc787; /* Darker green background on hover */
+    --bs-btn-hover-color: #000000; /* Black text color on hover */
+    --bs-btn-hover-border-color: #5cc787; /* Darker green border on hover */
 }
 
+/* Custom text color and spacing */
 .custom-txt {
-    color: #78e2a0;
+    color: #78e2a0; /* Light green color */
+    letter-spacing: -1px; /* Tighter letter spacing */
 }
 
+/* Styling for social media icons */
 .social-media {
-    color: #9CA3AF;
-    font-size: 28px;
-    padding: 0 0.438rem;
+    color: #9CA3AF; /* Gray color for icons */
+    font-size: 28px; /* Specific font size */
+    padding: 0 0.438rem; /* Padding around icons */
 }
 
+/* Hover effect for social media icons */
 .social-media:hover {
-    color: #ffffff;
+    color: #ffffff; /* White color on hover */
 }
 
-.pfp {
-    border-radius: 50%;
-    height: 25.875rem;
-    width: 25.875rem;
-}
-
+/* Header styling */
 .webheader {
-    background:#78e2a0;
-    padding:5px;
+    background: #78e2a0; /* Light green background */
+    padding: 5px; /* Padding inside the header */
+    font-weight: 800;
 }
 
+/* Root-level font family */
 :root {
-    --bs-body-font-family:'JetBrains Mono',monospace;
+    --bs-body-font-family: 'JetBrains Mono', monospace; /* Monospace font for the entire body */
 }
 
+/* Body background color */
 body {
-    background:#1f222a;
+    background: #1f222a; /* Dark gray background for the body */
 }
 
+/* Styling for all h3 headers */
+h3 {
+    font-weight: 900; /* Bold font weight */
+    letter-spacing: -1.3px; /* Tighter letter spacing */
+}
+
+/* Home section settings */
 home {
-    min-height:100vh;
-    overflow:hidden;
+    min-height: 100vh; /* Minimum height set to full viewport height */
+    overflow: hidden; /* Prevents overflow */
 }
 
+/* Custom column styling within the home section */
 home > div > .row > .col-sm-12 {
-    flex: 3 1;
-    padding-right: 200px;
+    flex: 2 1; /* Flex settings for larger content area */
 }
 
 home > div > .row > .col {
-    flex: 1 2;
+    flex: 1 2; /* Flex settings for smaller content area */
 }
 
+/* Social media icon settings within the home section */
 home div a i {
-    line-height: 50px !important;
-    font-size: 30px !important;
+    line-height: 50px !important; /* Line height for better alignment */
+    font-size: 30px !important; /* Specific font size */
 }
 
+/* Skills section settings */
 skills {
-    min-height:100vh;
-    overflow:hidden;
+    min-height: 100vh; /* Minimum height set to full viewport height */
+    overflow: hidden; /* Prevents overflow */
 }
 
+/* Skill card settings */
 skillcard {
-    width: 250px;
-    height: 90px;
-    border-radius: 8px;
-    background: #2E2E2E;
-    padding: 15px;
-    position: relative;
-    color: #9CA3AF;
-    margin-top: 21px;
-    margin-left: 21px;
+    width: 12vw; /* Specific width */
+    height: 13vh; /* Specific height */
+    background: #2E2E2E; /* Dark gray background */
+    color: #9CA3AF; /* Light gray text color */
 }
 
+/* Text styling within skill cards */
 skillcard > p {
-    font-size: .875rem;
+    font-size: 0.875rem; /* Slightly smaller font size */
 }
 
+/* Image styling within skill cards */
 skillcard > img {
-    position: absolute;
-    top: 10px;
-    right: 15px;
-    fill: #9CA3AF;
+    position: absolute; /* Positioned absolutely within the card */
+    top: 10px; /* Positioning from the top */
+    right: 15px; /* Positioning from the right */
+    fill: #9CA3AF; /* Gray color fill for SVG images */
 }
 
+/* Header styling within skill cards */
+skillcard > h5 {
+    font-weight: 900; /* Bold font weight */
+    letter-spacing: -1.2px; /* Tighter letter spacing */
+    color: #c0c0c0; /* Light gray color */
+}
+
+/* Hover effect for skill cards */
 skillcard:hover {
-    color: #ffffff;
-    background: #2D2D2D;
+    color: #ffffff; /* White text color on hover */
+    background: #2D2D2D; /* Slightly darker background on hover */
 }
 
+/* Experience section settings */
 experience {
-    min-height:100vh;
-    overflow:hidden;
+    min-height: 100vh; /* Minimum height set to full viewport height */
+    overflow: hidden; /* Prevents overflow */
 }
 
+/* Timeline settings within the experience section */
 experiencetimeline {
-    margin-top: 40px;
+    margin-top: 40px; /* Top margin for spacing */
 }
 
+/* Timeline list styling */
 ul.timeline-list {
-    position: relative;
-    margin: 0;
-    padding: 0
+    position: relative; /* Positioned relative for absolute positioning within */
+    margin: 0; /* Removes default margin */
+    padding: 0; /* Removes default padding */
 }
 
+/* Vertical line in the timeline */
 ul.timeline-list:before {
-    position: absolute;
-    content: "";
-    width: 2px;
-    height: 100%;
-    background-color: #78e2a0;
-    left: 50%;
-    top: 0;
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
+    position: absolute; /* Positioned absolutely within the list */
+    content: ""; /* Empty content for the line */
+    width: 2px; /* Line thickness */
+    height: 100%; /* Full height of the timeline */
+    background-color: #78e2a0; /* Light green color for the line */
+    left: 50%; /* Centered horizontally */
+    top: 0; /* Positioned at the top */
+    transform: translateX(-50%); /* Centers the line */
 }
 
+/* Individual timeline items */
 ul.timeline-list li {
-    position: relative;
-    clear: both;
-    display: table;
+    position: relative; /* Positioned relative for absolute positioning within */
+    clear: both; /* Clears floating elements */
+    display: table; /* Table display for alignment */
 }
 
+/* Dots on the timeline */
 ul.timeline-list li:before {
-    position: absolute;
-    content: "";
-    width: 25px;
-    height: 25px;
-    background-color: #78e2a0;
-    left: 50%;
-    top: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    border-radius: 50%;
+    position: absolute; /* Positioned absolutely within the list item */
+    content: ""; /* Empty content for the dot */
+    width: 25px; /* Dot width */
+    height: 25px; /* Dot height */
+    background-color: #78e2a0; /* Light green color */
+    left: 50%; /* Centered horizontally */
+    top: 50%; /* Centered vertically */
+    transform: translate(-50%, -50%); /* Centers the dot */
+    border-radius: 50%; /* Makes the dot circular */
 }
 
+/* Background color for work sections */
 work {
-    background-color:#1f222a;
+    background-color: #1f222a; /* Dark gray background */
 }
 
+/* Work section styling within the timeline */
 ul.timeline-list li work {
-    width: 45%;
-    color: #ffffff;
-    padding: 30px;
-    float: left;
+    width: 45%; /* Specific width for work sections */
+    color: #ffffff; /* White text color */
+    padding: 30px; /* Padding inside the work section */
+    float: left; /* Floats to the left */
 }
 
+/* Work section styling for even timeline items */
 ul.timeline-list li:nth-child(2n) work {
-    float: right;
+    float: right; /* Floats to the right for even items */
 }
 
+/* Date span styling within work sections */
 work span {
-    font-weight: 500;
+    font-weight: 500; /* Medium font weight */
+    color: #78e2a0; /* Light green color */
+}
+
+/* Header styling within work sections */
+work h5 {
+    font-weight: 600; /* Semi-bold font weight */
+}
+
+work h5 a {
+    color: #ffffff;
+}
+
+work h5 a:hover {
     color: #78e2a0;
 }
 
-work h5 {
-    font-weight: 600;
-    margin: 10px 0;
-}
-
-work p {
-    text-align: justify;
-}
-
+/* Styling for tag elements within work sections */
 tags {
-    width: 74px;
-    height: 27px;
-    background: #2E2E2E;
-    justify-content: center;
-    text-align: center;
-    display: inline-block;
-    border-radius: 30px;
+    width: 80px; /* Specific width for tags */
+    height: 27px; /* Specific height for tags */
+    background: #2E2E2E; /* Dark gray background */
 }
 
+/* Text color within tags */
 tags > span {
-    color: #9CA3AF !important;
+    color: #9CA3AF !important; /* Light gray color for the text */
 }
 
+/* Hover effect for tags */
 tags:hover {
-    background: #2D2D2D;
+    background: #2D2D2D; /* Slightly darker background on hover */
 }
 
+/* Text color on hover within tags */
 tags:hover > span {
-    color: #ffffff !important;
+    color: #ffffff !important; /* White text color on hover */
 }
 
+/* Projects section settings */
 projects {
-    min-height:100vh;
-    overflow:hidden
+    min-height: 100vh; /* Minimum height set to full viewport height */
+    overflow: hidden; /* Prevents overflow */
 }
 
+/* Blog card styling */
 projectcard {
-    width: 390px;
-    height: 595px;
-    background: #363636;
-    border-radius: 10px;
-    vertical-align: middle;
-    margin-top: 31px;
-    margin-left: 80px;
+    background: #363636 !important; /* Medium dark gray background */
 }
 
-projectcard > p {
-    padding: 5px 18px;
-    text-align: justify;
+/* Hover effect for links within blog cards */
+projectcard > div > div > div > a:hover {
+    color: #78e2a0 !important; /* Light green color on hover */
 }
 
-projectcard > h5,
-projectcard > div {
-    text-align: center;
+/* Adds a right arrow after links within blog cards */
+projectcard > div > div > a::after {
+    content: ' ->'; /* Appends an arrow after the link text */
 }
 
-projectcard > div > a::after {
-    content: ' ->';
-}
-
-blogs {
-    min-height:100vh;
-    overflow:hidden
-}
-
-blogcard {
-    background: #363636 !important;
-    width: 1345px !important;
-    height: 295px !important;
-    border-radius: 10px !important;
-    margin-top: 24px !important;
-    margin-left: 45px !important;
-    padding: 30px 40px !important;
-}
-
-blogcard > div > div > img {
-    width: 465px !important;
-    height: 230px !important;
-    border-radius: 14px !important;
-}
-
-blogcard > div > div > div > p {
-    text-align: justify !important;
-}
-
-blogcard > div > div > div > a {
-    text-decoration: none !important;
-}
-
-blogcard > div > div > div > a:hover {
-    color: #78e2a0 !important;
-}
-
-blogcard > div > div > a::after {
-    content: ' ->';
-}
-
+/* Contacts section settings */
 contacts {
-    min-height:100vh;
-    overflow:hidden
+    min-height: 100vh; /* Minimum height set to full viewport height */
+    overflow: hidden; /* Prevents overflow */
+}
+
+/* Optimizations for smaller screens */
+@media only screen and (max-width: 960px) {
+    home > div > .row > .col-sm-12 {
+        padding-right: 0; /* Removes right padding for smaller screens */
+    }
+
+    home > div > .row > .col {
+        display: none !important;
+    }
+
+    skillcard {
+        width: 49%; /* Adjusts width for smaller screens */
+        height: auto; /* Auto height for better adaptability */
+        margin-left: 0; /* Resets left margin */
+        margin-right: 0; /* Resets right margin */
+    }
+
+    projects {
+        min-height:100vh;
+        overflow:hidden
+    }
+
+    projectcard {
+        width: 100% !important;
+        height: auto !important;
+        background: #363636 !important;
+        border-radius: 10px !important;
+        vertical-align: middle !important;
+        margin-top: 0 !important;
+        margin-left: 0 !important;
+    }
+
+    projectcard > h5,
+    projectcard > div {
+        text-align: center !important;
+    }
+
+    projectcard > div > div > img {
+        height: auto !important;
+    }
+
+    .navbar {
+        font-size: 0.875rem; /* Reduces font size in the navbar for smaller screens */
+    }
+
+    .social-media {
+        font-size: 24px; /* Adjusts icon size for smaller screens */
+    }
+
+    ul.timeline-list li work {
+        width: 90%; /* Adjusts work section width for smaller screens */
+        float: right; /* Resets float for better stacking */
+        margin: 0 auto; /* Centers work sections */
+    }
+
+    ul.timeline-list:before {
+        left: 25px; /* Moves the timeline line to the left on smaller screens */
+    }
+
+    ul.timeline-list li:before {
+        left: 25px; /* Moves the timeline dot to the left on smaller screens */
+    }
+
+    ul.timeline-list li work {
+        padding-left: 50px; /* Adds padding to avoid overlap with the timeline line */
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    skillcard {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    skillcard {
+        width: 95%;
+    }
 }

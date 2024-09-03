@@ -2,249 +2,390 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>portfolio</title>
+    <title>jmpfbmx | Software Engineer</title>
     <link href='https://fonts.googleapis.com/css?family=JetBrains Mono' rel='stylesheet'>
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-<body>
-    <header class="justify-content-center">
-        <nav class="navbar navbar-expand-lg fixed-top transparent-nav custom-margin">
-            <div class="container-fluid">
-                <a class="navbar-brand webheader home text-black" onclick="home()">portfolio</a>
-                <div class="d-flex">
-                    <button aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#navbarNav" data-bs-toggle="collapse" type="button">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav">
-                            <li class="nav-item"><a href="#home" class="nav-link navbar-sections" onclick="home()">Home</a></li>
-                            <li class="nav-item"><a href="#skills" class="nav-link navbar-sections" onclick="skills()">Skills</a></li>
-                            <li class="nav-item"><a href="#experience" class="nav-link navbar-sections" onclick="experience()">Experience</a></li>
-                            <li class="nav-item"><a href="#projects" class="nav-link navbar-sections" onclick="projects()">Projects</a></li>
-                            <li class="nav-item"><a href="#blogs" class="nav-link navbar-sections" onclick="blogs()">Blogs</a></li>
-                            <li class="nav-item"><a href="#contact" class="nav-link navbar-sections" onclick="contact()">Contact</a></li>
-                        </ul>
-                    </div>
+<body class="loading">
+<header>
+    <nav id="mainNav" class="navbar navbar-expand-lg fixed-top dark-nav">
+        <div class="container">
+            <a class="navbar-brand webheader home text-black" href="#home">᜶jmpfbmx</a>
+            <div class="d-flex">
+                <button aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"
+                        class="navbar-toggler" data-bs-target="#navbarNav" data-bs-toggle="collapse" type="button">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a href="#home" class="nav-link navbar-sections">Home</a></li>
+                        <li class="nav-item"><a href="#skills" class="nav-link navbar-sections">Skills</a></li>
+                        <li class="nav-item"><a href="#experience" class="nav-link navbar-sections">Experience</a></li>
+                        <li class="nav-item"><a href="#projects" class="nav-link navbar-sections">Projects</a></li>
+                        <li class="nav-item"><a href="#contact" class="nav-link navbar-sections">Contact</a></li>
+                    </ul>
                 </div>
             </div>
-        </nav>
-    </header>
-    <main class="custom-margin">
-        <home class="text-white d-flex flex-column flex-nowrap justify-content-center align-items-center" id="home">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-sm-12 col-md-12 col-lg-6">
-                        <p class="custom-txt">Hello, my name is</p>
-                        <h3>Lorem Ipsum</h3>
-                        <p class="description-txt">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed gravida erat nec tincidunt varius. Sed eget porta sem. Sed eu libero id quam lacinia tristique ac id tortor. Donec dignissim velit nisl, vitae  vehicula tortor fermentum vitae. Nulla aliquet efficitur erat id  pretium. Fusce nunc leo, imperdiet in egestas id, convallis non nibh.  Donec ac tortor quis dui vulputate viverra.<br>
-                        </p>
-                        <div class="lead d-flex justify-content-start align-items-center">
-                            <a class="btn btn-primary custom-btn" href="#contact" onclick="contact()">Contact me -></a>
-                            <div class="ms-4">
-                                <a href="https://github.com/"><i class="fa-brands fa-github social-media"></i></a>
-                                <a href="https://linkedin.com/"><i class="fa-brands fa-linkedin social-media"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <img src="img/profile.png" class="pfp" alt="...">
-                    </div>
-                </div>
-            </div>
-        </home>
-        <skills class="text-white d-flex flex-column flex-nowrap justify-content-evenly align-items-center" id="skills">
-            <div class="container">
-                <div class="row justify-content-between align-items-center">
-                    <div class="col-sm-12 col-md-12">
-                        <h3 class="custom-txt">Skills</h3>
-                        <div class="col-lg-12">
-                            <skillcard class="d-inline-block">
-                                <h5>C</h5>
-                                <p>5 years of experience</p>
-                                <img src="img/c.svg" />
-                            </skillcard>
-                            <skillcard class="d-inline-block">
-                                <h5>C</h5>
-                                <p>5 years of experience</p>
-                                <img src="img/c.svg" />
-                            </skillcard>
-                            <skillcard class="d-inline-block">
-                                <h5>C</h5>
-                                <p>5 years of experience</p>
-                                <img src="img/c.svg" />
-                            </skillcard>
-                            <skillcard class="d-inline-block">
-                                <h5>C</h5>
-                                <p>5 years of experience</p>
-                                <img src="img/c.svg" />
-                            </skillcard>
-                            <skillcard class="d-inline-block">
-                                <h5>C</h5>
-                                <p>5 years of experience</p>
-                                <img src="img/c.svg" />
-                            </skillcard>
-                            <skillcard class="d-inline-block">
-                                <h5>C</h5>
-                                <p>5 years of experience</p>
-                                <img src="img/c.svg" />
-                            </skillcard>
-                            <skillcard class="d-inline-block">
-                                <h5>C</h5>
-                                <p>5 years of experience</p>
-                                <img src="img/c.svg" />
-                            </skillcard>
-                            <skillcard class="d-inline-block">
-                                <h5>C</h5>
-                                <p>5 years of experience</p>
-                                <img src="img/c.svg" />
-                            </skillcard>
-                            <skillcard class="d-inline-block">
-                                <h5>C</h5>
-                                <p>5 years of experience</p>
-                                <img src="img/c.svg" />
-                            </skillcard>
-                            <skillcard class="d-inline-block">
-                                <h5>C</h5>
-                                <p>5 years of experience</p>
-                                <img src="img/c.svg" />
-                            </skillcard>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </skills>
-        <experience class="text-white d-flex flex-column flex-nowrap justify-content-center align-items-center" id="experience">
-            <div class="container">
-                <div class="row justify-content-between align-items-center">
-                    <div class="col-sm-12 col-md-12">
-                        <h3 class="custom-txt">Experience</h3>
-                        <experiencetimeline class="experience">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-xl-12">
-                                        <ul class="timeline-list">
-                                            <li>
-                                                <work class="timeline_content">
-                                                    <span>jan 2010 - dec 2019</span>
-                                                    <h5>@Lorem Ipsum</h5>
-                                                    <h6>Senior Engineer</h6>
-                                                    <p class="description-txt">
-                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed gravida erat nec tincidunt varius. Sed eget porta sem. Sed eu libero id quam lacinia tristique ac id tortor. Donec dignissim velit nisl, vitae  vehicula tortor fermentum vitae. Nulla aliquet efficitur erat id  pretium. Fusce nunc leo, imperdiet in egestas id, convallis non nibh.  Donec ac tortor quis dui vulputate viverra.
-                                                    </p>
-                                                    <tags>
-                                                        <span class="badge badge-pill badge-primary">C</span>
-                                                    </tags>
-                                                </work>
-                                            </li>
-                                            <li>
-                                                <work class="timeline_content">
-                                                    <span>jan 2000 - dec 2009</span>
-                                                    <h5>@Lorem Ipsum</h5>
-                                                    <h6>Senior Engineer</h6>
-                                                    <p class="description-txt">
-                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed gravida erat nec tincidunt varius. Sed eget porta sem. Sed eu libero id quam lacinia tristique ac id tortor. Donec dignissim velit nisl, vitae  vehicula tortor fermentum vitae. Nulla aliquet efficitur erat id  pretium. Fusce nunc leo, imperdiet in egestas id, convallis non nibh.  Donec ac tortor quis dui vulputate viverra.
-                                                    </p>
-                                                    <tags>
-                                                        <span class="badge badge-pill badge-primary">C</span>
-                                                    </tags>
-                                                </work>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </experiencetimeline>
-                    </div>
-                </div>
-            </div>
-        </experience>
-        <projects class="text-white d-flex flex-column flex-nowrap justify-content-evenly align-items-center" id="projects">
-            <div class="container">
-                <div class="row justify-content-between align-items-center">
-                    <div class="col-sm-12 col-md-12">
-                        <h3 class="custom-txt">Projects</h3>
-                        <div class="col-lg-12">
-                            <projectcard class="d-inline-block">
-                                <img src="img/sample.png"/>
-                                <h5>Lorem Ipsum</h5>
-                                <p class="description-txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed gravida erat nec tincidunt varius. Sed eget porta sem. Sed eu libero id quam lacinia tristique ac id tortor. Donec dignissim velit nisl, vitae  vehicula tortor fermentum vitae. Nulla aliquet efficitur erat id  pretium. Fusce nunc leo, imperdiet in egestas id, convallis non nibh.  Donec ac tortor quis dui vulputate viverra.</p>
-                                <div><a class="btn btn-primary custom-btn" href="">Lorem Ipsum</a></div>
-                            </projectcard>
-                            <projectcard class="d-inline-block">
-                                <img src="img/sample.png"/>
-                                <h5>Lorem Ipsum</h5>
-                                <p class="description-txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed gravida erat nec tincidunt varius. Sed eget porta sem. Sed eu libero id quam lacinia tristique ac id tortor. Donec dignissim velit nisl, vitae  vehicula tortor fermentum vitae. Nulla aliquet efficitur erat id  pretium. Fusce nunc leo, imperdiet in egestas id, convallis non nibh.  Donec ac tortor quis dui vulputate viverra.</p>
-                                <div><a class="btn btn-primary custom-btn" href="">Lorem Ipsum</a></div>
-                            </projectcard>
-                            <projectcard class="d-inline-block">
-                                <img src="img/sample.png"/>
-                                <h5>Lorem Ipsum</h5>
-                                <p class="description-txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed gravida erat nec tincidunt varius. Sed eget porta sem. Sed eu libero id quam lacinia tristique ac id tortor. Donec dignissim velit nisl, vitae  vehicula tortor fermentum vitae. Nulla aliquet efficitur erat id  pretium. Fusce nunc leo, imperdiet in egestas id, convallis non nibh.  Donec ac tortor quis dui vulputate viverra.</p>
-                                <div><a class="btn btn-primary custom-btn" href="">Lorem Ipsum</a></div>
-                            </projectcard>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </projects>
-        <blogs class="text-white d-flex flex-column flex-nowrap justify-content-evenly align-items-center" id="blogs">
-            <div class="container">
-                <div class="row justify-content-between align-items-center">
-                    <div class="row g-0">
-                        <h3 class="custom-txt">Blogs</h3>
-                        <blogcard class="card">
-                            <div class="row no-gutters">
-                                <div class="col-md-5">
-                                    <img src="img/blogsample.png" />
-                                </div>
-                                <div class="col-md-7">
-                                    <div class="card-body">
-                                        <h5 class="card-title text-white">Lorem Ipsum</h5>
-                                        <p class="description-txt card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed gravida erat nec tincidunt varius. Sed eget porta sem. Sed eu libero id quam lacinia tristique ac id tortor. Donec dignissim velit nisl, vitae  vehicula tortor fermentum vitae. Nulla aliquet efficitur erat id  pretium. Fusce nunc leo, imperdiet in egestas id, convallis non nibh.  Donec ac tortor quis dui vulputate viverra.</p>
-                                        <a class="btn btn-link text-white card-text" href="">Read more</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </blogcard>
-                        <blogcard class="card">
-                            <div class="row no-gutters">
-                                <div class="col-md-7">
-                                    <div class="card-body">
-                                        <h5 class="card-title text-white">Lorem Ipsum</h5>
-                                        <p class="description-txt card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed gravida erat nec tincidunt varius. Sed eget porta sem. Sed eu libero id quam lacinia tristique ac id tortor. Donec dignissim velit nisl, vitae  vehicula tortor fermentum vitae. Nulla aliquet efficitur erat id  pretium. Fusce nunc leo, imperdiet in egestas id, convallis non nibh.  Donec ac tortor quis dui vulputate viverra.</p>
-                                        <a class="btn btn-link text-white card-text" href="">Read more</a>
-                                    </div>
-                                </div>
-                                <div class="col-md-5">
-                                    <img src="img/blogsample.png" />
-                                </div>
-                            </div>
-                        </blogcard>
-                    </div>
-                </div>
-            </div>
-        </blogs>
-        <contacts class="text-white d-flex flex-column flex-nowrap justify-content-center align-items-center" id="contact">
-            <div class="container">
-                <div class="row justify-content-between align-items-center">
-                    <div class="col-sm-12 col-md-12">
-                        <h3 class="custom-txt">Contact me!</h3>
-                        <p>I'm more than glad to hear from you if you'd like to reach me out<br><br>Please, feel free to drop me some lines!</p>
-                        <a class="btn btn-primary custom-btn" href="mailto:">Let's talk -></a>
-                    </div>
-                </div>
-            </div>
-        </contacts>
-    </main>
-    <footer class="mt-auto py-2 blur-nav text-center footer-main">
-        <div class="container-fluid">
-            <span class="text-white">&copy; Designed by <a class="text-decoration-none copyright-link" href="https://github.com/jmpfbmx">Jose</a>.</span>
         </div>
-    </footer>
-    <script src="js/bootstrap.bundle.js"></script>
-    <script src="js/main.js"></script>
+    </nav>
+</header>
+<main class="">
+    <home class="text-white d-flex flex-column flex-nowrap justify-content-around align-items-center" id="home">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                    <p class="custom-txt">Hey, my name is</p>
+                    <h3>Jose Maria Perez Forte</h3>
+                    <p class="description-txt">
+                        I'm a Software Engineer passionate about Technology and Reverse Engineering.<br>With more than 3
+                        years of experience, I create robust and resilient <br>software solutions that solve real life
+                        problems.
+                        <br><br>Currently working at Basic, Inc. as a Software Engineer, responsible for<br>developing
+                        solutions for MediaTek-based mobile platforms.
+                    </p>
+                    <div class="lead d-flex justify-content-start align-items-center">
+                        <a class="btn btn-primary custom-btn" href="#contact">Contact me -></a>
+                        <div class="ms-4">
+                            <a href="https://github.com/jmpfbmx"><i class="fa-brands fa-github social-media"></i></a>
+                            <a href="https://www.linkedin.com/in/jose-maria-perez-forte-84a049180/"><i
+                                    class="fa-brands fa-linkedin social-media"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <img src="img/profile.webp" class="img-fluid rounded-circle" alt="Profile Picture">
+                </div>
+            </div>
+        </div>
+    </home>
+    <skills class="text-white d-flex flex-column flex-nowrap justify-content-evenly align-items-center" id="skills">
+        <div class="container">
+            <div class="row justify-content-between align-items-center">
+                <div class="col-sm-12 col-md-12">
+                    <h3 class="custom-txt">Skills</h3>
+                    <div class="col-lg-12">
+                        <skillcard class="d-inline-block rounded-3 mt-3 ms-3 position-relative p-3">
+                            <h5>Android</h5>
+                            <p>8 years of experience</p>
+                            <img src="img/android.svg" alt="Android Logo">
+                        </skillcard>
+                        <skillcard class="d-inline-block rounded-3 mt-3 ms-3 position-relative p-3">
+                            <h5>Bash</h5>
+                            <p>8 years of experience</p>
+                            <img src="img/bash.svg" alt="Bash Logo">
+                        </skillcard>
+                        <skillcard class="d-inline-block rounded-3 mt-3 ms-3 position-relative p-3">
+                            <h5>C</h5>
+                            <p>8 years of experience</p>
+                            <img src="img/c.svg" alt="C Logo">
+                        </skillcard>
+                        <skillcard class="d-inline-block rounded-3 mt-3 ms-3 position-relative p-3">
+                            <h5>C++</h5>
+                            <p>8 years of experience</p>
+                            <img src="img/cpp.svg" alt="C++ Logo">
+                        </skillcard>
+                        <skillcard class="d-inline-block rounded-3 mt-3 ms-3 position-relative p-3">
+                            <h5>Dart</h5>
+                            <p>5 years of experience</p>
+                            <img src="img/dart.svg" alt="Dart Logo">
+                        </skillcard>
+                        <skillcard class="d-inline-block rounded-3 mt-3 ms-3 position-relative p-3">
+                            <h5>Flutter</h5>
+                            <p>3 years of experience</p>
+                            <img src="img/flutter.svg" alt="Flutter Logo">
+                        </skillcard>
+                        <skillcard class="d-inline-block rounded-3 mt-3 ms-3 position-relative p-3">
+                            <h5>Git</h5>
+                            <p>8 years of experience</p>
+                            <img src="img/git.svg" alt="Git Logo">
+                        </skillcard>
+                        <skillcard class="d-inline-block rounded-3 mt-3 ms-3 position-relative p-3">
+                            <h5>Java</h5>
+                            <p>5 years of experience</p>
+                            <img src="img/java.svg" alt="Java Logo">
+                        </skillcard>
+                        <skillcard class="d-inline-block rounded-3 mt-3 ms-3 position-relative p-3">
+                            <h5>Kotlin</h5>
+                            <p>3 years of experience</p>
+                            <img src="img/kotlin.svg" alt="Kotlin Logo">
+                        </skillcard>
+                        <skillcard class="d-inline-block rounded-3 mt-3 ms-3 position-relative p-3">
+                            <h5>Linux</h5>
+                            <p>14 years of experience</p>
+                            <img src="img/linux.svg" alt="Linux Logo">
+                        </skillcard>
+                        <skillcard class="d-inline-block rounded-3 mt-3 ms-3 position-relative p-3">
+                            <h5>MongoDB</h5>
+                            <p>5 years of experience</p>
+                            <img src="img/mongodb.svg" alt="Mongo Logo">
+                        </skillcard>
+                        <skillcard class="d-inline-block rounded-3 mt-3 ms-3 position-relative p-3">
+                            <h5>Python</h5>
+                            <p>5 years of experience</p>
+                            <img src="img/python.svg" alt="Python Logo">
+                        </skillcard>
+                        <skillcard class="d-inline-block rounded-3 mt-3 ms-3 position-relative p-3">
+                            <h5>Ruby</h5>
+                            <p>1 year of experience</p>
+                            <img src="img/ruby.svg" alt="Ruby Logo">
+                        </skillcard>
+                        <skillcard class="d-inline-block rounded-3 mt-3 ms-3 position-relative p-3">
+                            <h5>SQL Databases</h5>
+                            <p>8 years of experience</p>
+                            <img src="img/databases.svg" alt="Databases Logo">
+                        </skillcard>
+                        <skillcard class="d-inline-block rounded-3 mt-3 ms-3 position-relative p-3">
+                            <h5>Swift</h5>
+                            <p>1 year of experience</p>
+                            <img src="img/swift.svg" alt="Swift Logo">
+                        </skillcard>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </skills>
+    <experience class="text-white d-flex flex-column flex-nowrap justify-content-center align-items-center"
+                id="experience">
+        <div class="container">
+            <div class="row justify-content-between align-items-center mt-5">
+                <div class="col-sm-12 col-md-12">
+                    <h3 class="custom-txt mb-3">Experience</h3>
+                    <experiencetimeline class="experience">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xl-12">
+                                    <ul class="timeline-list">
+                                        <li>
+                                            <work class="timeline_content">
+                                                <span>sep 2024 - Now</span>
+                                                <h5 class="my-2"><a class="text-decoration-none">@Basic,
+                                                    Inc.</a>
+                                                </h5>
+                                                <h6>Software Engineer</h6>
+                                                <p class="description-txt text-justify">
+                                                    Basic, Inc. is a mobile device manufacturer focused on creating practical and useful devices without the distractions of social media or web browsing.<br>During my day to day, I am responsible for developing and maintaining solutions for their MediaTek-based mobile platforms on a variety of layers, specially firmware.
+                                                </p>
+                                                <tags class="rounded-pill text-center d-inline-block mt-2">
+                                                    <span class="badge badge-pill badge-primary">Android</span>
+                                                </tags>
+                                                <tags class="rounded-pill text-center d-inline-block mt-2">
+                                                    <span class="badge badge-pill badge-primary">C</span>
+                                                </tags>
+                                                <tags class="rounded-pill text-center d-inline-block mt-2">
+                                                    <span class="badge badge-pill badge-primary">Git</span>
+                                                </tags>
+                                                <tags class="rounded-pill text-center d-inline-block mt-2">
+                                                    <span class="badge badge-pill badge-primary">Java</span>
+                                                </tags>
+                                                <tags class="rounded-pill text-center d-inline-block mt-2">
+                                                    <span class="badge badge-pill badge-primary">Kotlin</span>
+                                                </tags>
+                                                <tags class="rounded-pill text-center d-inline-block mt-2">
+                                                    <span class="badge badge-pill badge-primary">Linux</span>
+                                                </tags>
+                                            </work>
+                                        </li>
+                                        <li>
+                                            <work class="timeline_content">
+                                                <span>aug 2023 - Now</span>
+                                                <h5 class="my-2"><a class="text-decoration-none"
+                                                       href="https://www.minsait.com">@Minsait</a></h5>
+                                                <h6>Software Engineer</h6>
+                                                <p class="description-txt text-justify">
+                                                    Minsait is a leading Spanish technology and consulting company,
+                                                    operating in over 140 countries worldwide.
+                                                    Currently, I am involved in developing mobile applications for a
+                                                    major European energy & gas provider.
+                                                </p>
+                                                <tags class="rounded-pill text-center d-inline-block mt-2">
+                                                    <span class="badge badge-pill badge-primary">Bash</span>
+                                                </tags>
+                                                <tags class="rounded-pill text-center d-inline-block mt-2">
+                                                    <span class="badge badge-pill badge-primary">Dart</span>
+                                                </tags>
+                                                <tags class="rounded-pill text-center d-inline-block mt-2">
+                                                    <span class="badge badge-pill badge-primary">Databases</span>
+                                                </tags>
+                                                <tags class="rounded-pill text-center d-inline-block mt-2">
+                                                    <span class="badge badge-pill badge-primary">Flutter</span>
+                                                </tags>
+                                                <tags class="rounded-pill text-center d-inline-block mt-2">
+                                                    <span class="badge badge-pill badge-primary">Git</span>
+                                                </tags>
+                                                <tags class="rounded-pill text-center d-inline-block mt-2">
+                                                    <span class="badge badge-pill badge-primary">Java</span>
+                                                </tags>
+                                                <tags class="rounded-pill text-center d-inline-block mt-2">
+                                                    <span class="badge badge-pill badge-primary">Kotlin</span>
+                                                </tags>
+                                                <tags class="rounded-pill text-center d-inline-block mt-2">
+                                                    <span class="badge badge-pill badge-primary">Ruby</span>
+                                                </tags>
+                                                <tags class="rounded-pill text-center d-inline-block mt-2">
+                                                    <span class="badge badge-pill badge-primary">Swift</span>
+                                                </tags>
+                                            </work>
+                                        </li>
+                                        <li>
+                                            <work class="timeline_content">
+                                                <span>aug 2021 - Now</span>
+                                                <h5 class="my-2"><a class="text-decoration-none" href="https://www.lineageos.org/">@LineageOS</a>
+                                                </h5>
+                                                <h6>Device Maintainer</h6>
+                                                <p class="description-txt text-justify">
+                                                    LineageOS is a free and open-source operating system for various
+                                                    devices, built on the Android mobile platform. It was previously
+                                                    known as CyanogenMod. I maintained the SONY Xperia X / X Compact
+                                                    until 2022, and I am currently maintaining the BQ Aquaris X / X Pro,
+                                                    X2 / X2 Pro, and LGE SM8150 devices.
+                                                </p>
+                                                <tags class="rounded-pill text-center d-inline-block mt-2">
+                                                    <span class="badge badge-pill badge-primary">Android</span>
+                                                </tags>
+                                                <tags class="rounded-pill text-center d-inline-block mt-2">
+                                                    <span class="badge badge-pill badge-primary">C</span>
+                                                </tags>
+                                                <tags class="rounded-pill text-center d-inline-block mt-2">
+                                                    <span class="badge badge-pill badge-primary">Git</span>
+                                                </tags>
+                                                <tags class="rounded-pill text-center d-inline-block mt-2">
+                                                    <span class="badge badge-pill badge-primary">Linux</span>
+                                                </tags>
+                                            </work>
+                                        </li>
+                                        <li>
+                                            <work class="timeline_content">
+                                                <span>mar 2023 - jun 2023</span>
+                                                <h5 class="my-2"><a class="text-decoration-none"
+                                                       href="https://www.ttialgeciras.com/en/">@TTI Algeciras</a></h5>
+                                                <h6>Software Engineer Internship</h6>
+                                                <p class="description-txt text-justify">
+                                                    Total Terminal International Algeciras S.A. (TTI ALGECIRAS) is one
+                                                    of the two container terminals operating in the Port of Algeciras
+                                                    Bay. I developed applications and services on Python, websites using
+                                                    Flask, solutions for Zebra devices and I managed/maintained Linux
+                                                    servers and databases.
+                                                </p>
+                                                <tags class="rounded-pill text-center d-inline-block mt-2">
+                                                    <span class="badge badge-pill badge-primary">Bash</span>
+                                                </tags>
+                                                <tags class="rounded-pill text-center d-inline-block mt-2">
+                                                    <span class="badge badge-pill badge-primary">Databases</span>
+                                                </tags>
+                                                <tags class="rounded-pill text-center d-inline-block mt-2">
+                                                    <span class="badge badge-pill badge-primary">Git</span>
+                                                </tags>
+                                                <tags class="rounded-pill text-center d-inline-block mt-2">
+                                                    <span class="badge badge-pill badge-primary">Python</span>
+                                                </tags>
+                                                <tags class="rounded-pill text-center d-inline-block mt-2">
+                                                    <span class="badge badge-pill badge-primary">Linux</span>
+                                                </tags>
+                                            </work>
+                                        </li>
+                                        <li>
+                                            <work class="timeline_content">
+                                                <span>2020 - nov 2021</span>
+                                                <h5 class="my-2"><a class="text-decoration-none" href="https://revengeos.github.io/">@RevengeOS</a>
+                                                </h5>
+                                                <h6>Core Developer and Device Maintainer</h6>
+                                                <p class="description-txt text-justify">
+                                                    RevengeOS was a custom ROM based on AOSP, designed to be stable,
+                                                    fast, and user-friendly. I maintained devices including the bq
+                                                    Aquaris X / X Pro, OnePlus 8T, and Ulefone Armor X5 Pro (2019), along with additional contributions to the codebase.
+                                                </p>
+                                                <tags class="rounded-pill text-center d-inline-block mt-2">
+                                                    <span class="badge badge-pill badge-primary">Android</span>
+                                                </tags>
+                                                <tags class="rounded-pill text-center d-inline-block mt-2">
+                                                    <span class="badge badge-pill badge-primary">C</span>
+                                                </tags>
+                                                <tags class="rounded-pill text-center d-inline-block mt-2">
+                                                    <span class="badge badge-pill badge-primary">Git</span>
+                                                </tags>
+                                                <tags class="rounded-pill text-center d-inline-block mt-2">
+                                                    <span class="badge badge-pill badge-primary">Java</span>
+                                                </tags>
+                                                <tags class="rounded-pill text-center d-inline-block mt-2">
+                                                    <span class="badge badge-pill badge-primary">Linux</span>
+                                                </tags>
+                                            </work>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </experiencetimeline>
+                </div>
+            </div>
+        </div>
+    </experience>
+    <projects class="text-white d-flex flex-column flex-nowrap justify-content-evenly align-items-center" id="projects">
+        <div class="container">
+            <div class="row justify-content-between align-items-center">
+                <div class="col-sm-12 col-md-12">
+                    <h3 class="custom-txt mt-4">Projects</h3>
+                    <div class="col-lg-12 px-5">
+                        <projectcard class="card my-3 rounded-4">
+                            <div class="row g-0 align-items-center">
+                                <div class="col-md-5">
+                                    <img class="img-fluid rounded-4" src="img/fitlifeproject.png" />
+                                </div>
+                                <div class="col-md-7">
+                                    <div class="card-body px-2 px-sm-5">
+                                        <h5 class="card-title text-white">FITLIFE</h5>
+                                        <p class="description-txt text-justify card-ext">FITLIFE is a cross-platform application designed for gyms, sport studios, and fitness centers seeking to simplify the management and operation of their services. The app allows users to book classes, track workouts, manage memberships, and communicate effectively with clients. By offering an end-to-end solution, FITLIFE helps these improve the general user experience and optimize their daily operations.</p>
+                                            <a class="text-decoration-none" href="https://github.com/FitLifeProject"><i class="fa-brands fa-github social-media"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </projectcard>
+                        <projectcard class="card my-3 rounded-4">
+                            <div class="row g-0 align-items-center flex-row-reverse">
+                                <div class="col-md-5">
+                                    <img class="img-fluid rounded-4" src="img/notes_todo.png" />
+                                </div>
+                                <div class="col-md-7">
+                                    <div class="card-body px-2 px-sm-5">
+                                        <h5 class="card-title text-white">Notes ToDo</h5>
+                                        <p class="description-txt text-justify card-text">Notes ToDo is a cross-platform application powered by Flutter,
+                                            which let the users manage their notes and tasks in an efficient way, with an attractive
+                                            UI, it also uses Firebase as backend for storing and syncing the information in real
+                                            time providing a fast and secure access from every Android/iOS device. It was developed
+                                            for a conference I gave at Jaen (GDG 2023).</p>
+                                        <a class="text-decoration-none" href="https://github.com/flutterprojectsbyj/Notes-ToDo"><i class="fa-brands fa-github social-media"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </projectcard>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </projects>
+    <contacts class="text-white d-flex flex-column flex-nowrap text-center justify-content-center align-items-center" id="contact">
+        <div class="container">
+            <div class="row justify-content-between align-items-center">
+                <div class="col-sm-12 col-md-12">
+                    <h3 class="custom-txt">Contact me!</h3>
+                    <p>I'm more than glad to hear from you if you'd like to reach out.<br><br>Please, feel free to drop
+                        me some lines!</p>
+                    <a class="btn btn-primary custom-btn" href="mailto:hello@jmpfbmx.com">Let's talk -></a>
+                </div>
+            </div>
+        </div>
+    </contacts>
+</main>
+<footer class="mt-auto py-2 blur-nav footer-main">
+    <div class="container">
+        <span class="text-white">&copy; 2024 - Designed by <a class="text-decoration-none copyright-link text-white"
+                                                       href="https://github.com/jmpfbmx">Jose</a>.</span>
+    </div>
+</footer>
+<script src="js/bootstrap.bundle.js"></script>
+<script src="js/main.min.js"></script>
 </body>
 </html>

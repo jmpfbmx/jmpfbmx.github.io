@@ -1,51 +1,77 @@
-let actualCurrentSession = window.location.hash;
+window.onload = () => {
+    // Remove page blur after load
+    document.body.classList.remove('loading');
 
-const sections = document.querySelectorAll("home, skills, experience, projects, blogs, contacts");
-const links = document.querySelectorAll("nav a");
+    const sections = document.querySelectorAll("home, skills, experience, projects, contacts");
+    const links = document.querySelectorAll("nav a");
+    const nav = document.getElementById("mainNav");
+    let actualCurrentSession = window.location.hash || "#home";
 
-function updateHashOnScroll() {
-    let currentSection = null;
+    function scrollToSection(sectionId) {
+        document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+    }
 
-    sections.forEach(section => {
-        const sectionTop = section.offsetTop;
-        const sectionHeight = section.offsetHeight;
+    function updateHashOnScroll() {
+        let currentSection = null;
         const scrollPosition = window.scrollY;
 
-        if(scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
-            currentSection = section;
-        }
-    });
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop;
+            const sectionHeight = section.offsetHeight;
 
-    if(currentSection && window.location.hash !== `${currentSection.id}`) {
-        history.replaceState(null, null, `#${currentSection.id}`);
-        actualCurrentSession = `#${currentSection.id}`;
-        updateAria();
+            if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+                currentSection = section;
+            }
+        });
+
+        if (currentSection && actualCurrentSession !== `#${currentSection.id}`) {
+            history.replaceState(null, null, `#${currentSection.id}`);
+            actualCurrentSession = `#${currentSection.id}`;
+            updateAria();
+        }
     }
-}
 
-function updateAria() {
-    links.forEach(link => {
-        if (link.getAttribute('href') === actualCurrentSession) {
-            link.setAttribute('aria-current', 'page');
-            link.style.color = "#ffffff";
-            link.classList.add('active');
+    function updateAria() {
+        links.forEach(link => {
+            if (link.getAttribute('href') === actualCurrentSession) {
+                link.setAttribute('aria-current', 'page');
+                link.classList.add('active');
+            } else {
+                link.removeAttribute('aria-current');
+                link.classList.remove('active');
+            }
+        });
+    }
+
+    function handleNavBlur() {
+        if (window.scrollY > nav.offsetHeight) {
+            nav.classList.add("dark-nav");
+            nav.classList.remove("transparent-nav");
         } else {
-            link.removeAttribute('aria-current');
-            link.style.color = "#9CA3AF";
-            link.classList.remove('active');
+            nav.classList.remove("dark-nav");
+            nav.classList.add("transparent-nav");
         }
+    }
+
+    // Set up click listeners for smooth scrolling
+    links.forEach(link => {
+        link.addEventListener('click', (e) => {
+            e.preventDefault();
+            const targetId = link.getAttribute('href').substring(1); // Get the ID without the "#"
+            scrollToSection(targetId);
+        });
     });
-}
 
-let home = () => document.getElementById('home').scrollIntoView({behavior: 'smooth'});
-let skills = () => document.getElementById('skills').scrollIntoView({behavior: 'smooth'});
-let experience = () => document.getElementById('experience').scrollIntoView({behavior: 'smooth'});
-let projects = () => document.getElementById('projects').scrollIntoView({behavior: 'smooth'});
-let blogs = () => document.getElementById('blogs').scrollIntoView({behavior: 'smooth'});
-let contact = () => document.getElementById('contact').scrollIntoView({behavior: 'smooth'});
+    // Event listeners
+    window.addEventListener('scroll', () => {
+        updateHashOnScroll();
+        handleNavBlur();
+    });
 
-window.addEventListener('scroll', updateHashOnScroll);
-window.addEventListener('hashchange', updateAria);
+    window.addEventListener('hashchange', updateAria);
 
-updateHashOnScroll();
-updateAria();
+    // Initial load actions
+    updateHashOnScroll();
+    updateAria();
+    handleNavBlur();
+};
