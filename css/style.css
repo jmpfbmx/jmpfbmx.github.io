@@ -42,7 +42,7 @@ body.loading {
 
 /* Hover effect for all navigation links */
 .nav-link:hover {
-    --bs-navbar-hover-color: #fff; /* White color on hover */
+    color: #ffffff !important; /* White color on hover */
 }
 
 /* Styling for descriptive text */
